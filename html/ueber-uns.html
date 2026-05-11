@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schweizer Kantone – Über uns</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23c8102e'/><rect x='38' y='10' width='24' height='80' fill='white'/><rect x='10' y='38' width='80' height='24' fill='white'/></svg>" />
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Eigenes CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Hauptnavigation">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="index.html">
+        <span class="flag-icon">🇨🇭</span> Schweizer Kantone
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false"
+              aria-label="Navigation öffnen">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Startseite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kantone.html">Kantone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="ueber-uns.html">Über uns</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" role="banner">
+    <span class="hero-badge">Team</span>
+    <h1>Über uns</h1>
+    <p>Die Köpfe hinter diesem Projekt – Mediamatiker im ersten Lehrjahr.</p>
+  </header>
+
+  <!-- ===================== HAUPTINHALT ===================== -->
+  <main>
+    <div class="container-inhalt">
+
+      <!-- ---- Personen: 2-Spalten ---- -->
+      <section aria-labelledby="team-heading">
+        <h2 id="team-heading">Das Team</h2>
+        <div class="ueber-grid">
+
+          <!-- Person 1 -->
+          <article class="person-card">
+            <div class="bild-platzhalter">
+              <span class="icon">👤</span>
+              <span>Foto-Platzhalter</span>
+              <span style="font-size:0.75rem;">img/jan.jpg</span>
+            </div>
+            <!--
+              PLATZHALTER: Eigenes Bild hier einfügen
+              <img src="img/jan.jpg" alt="Jan Oliver Lässer" />
+            -->
+            <div class="person-info">
+              <p class="person-name">Jan Oliver Lässer</p>
+              <p class="person-rolle">Mediamatiker · 1. Lehrjahr</p>
+              <p style="font-size:0.9rem; color:#555; margin-top:0.8rem;">
+                Im ersten Lehrjahr als Mediamatiker lerne ich die Grundlagen der digitalen
+                Kommunikation, Webdesign und Gestaltung. Dieses Projekt im Modul 287
+                ist mein erster grösserer Auftritt mit HTML &amp; CSS.
+              </p>
+            </div>
+          </article>
+
+          <!-- Person 2 -->
+          <article class="person-card">
+            <div class="bild-platzhalter">
+              <span class="icon">👤</span>
+              <span>Foto-Platzhalter</span>
+              <span style="font-size:0.75rem;">img/janis.jpg</span>
+            </div>
+            <!--
+              PLATZHALTER: Eigenes Bild hier einfügen
+              <img src="img/janis.jpg" alt="Janis Wyss" />
+            -->
+            <div class="person-info">
+              <p class="person-name">Janis Wyss</p>
+              <p class="person-rolle">Mediamatiker · 1. Lehrjahr</p>
+              <p style="font-size:0.9rem; color:#555; margin-top:0.8rem;">
+                Als angehender Mediamatiker beschäftige ich mich mit den visuellen und
+                technischen Grundlagen des Webdesigns. Das Thema Schweizer Kantone
+                liegt mir als Schweizer natürlich besonders am Herzen.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- ---- Ausbildung: 2 Spalten ---- -->
+      <section aria-labelledby="ausbildung-heading">
+        <h2 id="ausbildung-heading">Unsere Ausbildung</h2>
+        <div class="intro-zwei-spalten">
+          <div style="background:var(--weiss); border-radius:var(--radius); padding:1.8rem; box-shadow:var(--shadow);">
+            <h3>🎓 Berufsbild Mediamatiker/in EFZ</h3>
+            <p>
+              Mediamatiker und Mediamatikerinnen sind Fachleute an der Schnittstelle von
+              Kommunikation, Gestaltung und Informatik. Sie planen und realisieren
+              multimediale Projekte – von der Webseite bis zum Printprodukt.
+            </p>
+            <p>
+              Die vierjährige Berufslehre umfasst Themen wie Webentwicklung, Grafik-
+              design, Marketing, Fotografie, Video und Administration.
+            </p>
+            <ul style="padding-left:1.2rem; color:#555; font-size:0.95rem;">
+              <li>Lehrzeit: 4 Jahre (EFZ)</li>
+              <li>Berufsschule mit breitem Fächerangebot</li>
+              <li>Überbetriebliche Kurse in praktischen Skills</li>
+            </ul>
+          </div>
+          <div style="background:var(--weiss); border-radius:var(--radius); padding:1.8rem; box-shadow:var(--shadow);">
+            <h3>📅 Wo wir gerade stehen</h3>
+            <p>
+              Wir befinden uns aktuell im <strong>ersten Lehrjahr</strong> unserer
+              Ausbildung zum Mediamatiker EFZ.
+            </p>
+            <p>
+              In diesem Lehrjahr legen wir die Grundlagen für unsere spätere Arbeit in
+              der digitalen Kommunikation.
+            </p>
+            <div style="display:flex; flex-direction:column; gap:0.5rem; margin-top:1rem;">
+              <div style="display:flex; justify-content:space-between; font-size:0.9rem; padding:0.4rem 0; border-bottom:1px solid var(--grau);">
+                <span>HTML &amp; CSS</span><strong style="color:var(--rot);">✓ Laufend</strong>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:0.9rem; padding:0.4rem 0; border-bottom:1px solid var(--grau);">
+                <span>Grafik / Gestaltung</span><strong style="color:var(--rot);">✓ Laufend</strong>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:0.9rem; padding:0.4rem 0;">
+                <span>JavaScript</span><strong style="color:#aaa;">⏳ Folgt</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- ---- Projekt-Box ---- -->
+      <section aria-labelledby="projekt-heading">
+        <div class="projekt-box">
+          <span class="modul-tag">Modul 287</span>
+          <h2 id="projekt-heading">Websites mit CSS Gestalten</h2>
+          <p>
+            Dieses Projekt ist Teil des Moduls <strong>287 – Websites mit CSS Gestalten</strong>.
+            Das Ziel des Moduls ist es, professionelle, responsive Webseiten mit
+            modernem CSS und einem CSS-Framework zu erstellen.
+          </p>
+          <p>
+            Im Rahmen dieses Projekts haben wir gelernt:
+          </p>
+          <ul style="color:rgba(255,255,255,0.8); padding-left:1.2rem; margin-bottom:0;">
+            <li>Strukturierung von HTML mit semantischen Tags</li>
+            <li>Externes CSS-Stylesheet mit sinnvollen Definitionen</li>
+            <li>Einbindung und Anwendung eines CSS-Frameworks (Bootstrap 5)</li>
+            <li>Responsive Layouts mit Grid und unterschiedlichen Spaltenbreiten</li>
+            <li>Framework-Komponenten: Card, Modal, Accordion, Navbar</li>
+            <li>Einbindung von Multimedia (Video, Audio) mit HTML5-Tags</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- ---- Animiertes Element (Wiederkehrend) ---- -->
+      <section aria-label="Danke-Animation">
+        <div class="animiert-wrap">
+          <div class="puls-ring" aria-hidden="true"></div>
+          <div>
+            <h3>Danke fürs Vorbeischauen!</h3>
+            <p style="margin:0; color:#555; font-size:0.95rem;">
+              Wir hoffen, dass dir unsere Webseite über die Schweizer Kantone gefallen hat.
+              Fragen, Anregungen? Sprich uns einfach an.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /.container-inhalt -->
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer role="contentinfo">
+    <span class="footer-kreuz">✛</span>
+    <p>
+      Kantone der Schweiz &nbsp;|&nbsp; Jan Oliver Lässer &amp; Janis Wyss<br />
+      Modul 287 – Websites mit CSS Gestalten
+    </p>
+    <p style="margin-top:0.5rem;">
+      <a href="index.html">Startseite</a> &nbsp;·&nbsp;
+      <a href="kantone.html">Kantone</a> &nbsp;·&nbsp;
+      <a href="ueber-uns.html">Über uns</a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
