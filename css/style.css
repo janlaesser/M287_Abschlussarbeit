@@ -51,13 +51,35 @@ h4 {
   line-height: 1.2;
 }
 
-h1 { font-size: clamp(32px, 5vw, 56px); color: var(--weiss); }
-h2 { font-size: clamp(22px, 3vw, 35px); color: var(--rot); margin-bottom: 16px; }
-h3 { font-size: 19px; color: var(--dunkel); margin-bottom: 8px; }
+h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  color: var(--weiss);
+}
 
-p  { margin-bottom: 16px; }
-a  { color: var(--rot); text-decoration: none; }
-a:hover { text-decoration: underline; }
+h2 {
+  font-size: clamp(22px, 3vw, 35px);
+  color: var(--rot);
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 19px;
+  color: var(--dunkel);
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+a {
+  color: var(--rot);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 img {
   max-width: 100%;
