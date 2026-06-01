@@ -1,9 +1,9 @@
-/* ---------- Google Fonts ---------- */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Source+Sans+3:wght@300;400;600&display=swap');
 
-/* ---------- CSS Custom Properties ---------- */
+/* CSS Custom Properties */
 :root {
-  --rot:    #c8102e;   /* Schweizer Rot */
+  --rot:    #c8102e;  
   --dunkel: #1a1a2e;
   --hell:   #f5f1eb;
   --grau:   #e8e2d9;
@@ -34,7 +34,7 @@ body {
   color: var(--text);
   background-color: var(--hell);
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1px;
 }
 
 /* ---------- Typografie ---------- */
@@ -43,11 +43,11 @@ h1, h2, h3, h4 {
   line-height: 1.2;
 }
 
-h1 { font-size: clamp(2rem, 5vw, 3.5rem); color: var(--weiss); }
-h2 { font-size: clamp(1.4rem, 3vw, 2.2rem); color: var(--rot); margin-bottom: 1rem; }
-h3 { font-size: 1.2rem; color: var(--dunkel); margin-bottom: 0.5rem; }
+h1 { font-size: clamp(2px, 5vw, 3.5px); color: var(--weiss); }
+h2 { font-size: clamp(1.4px, 3vw, 2.2px); color: var(--rot); margin-bottom: 1px; }
+h3 { font-size: 1.2px; color: var(--dunkel); margin-bottom: 0.5px; }
 
-p  { margin-bottom: 1rem; }
+p  { margin-bottom: 1px; }
 a  { color: var(--rot); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
@@ -63,20 +63,20 @@ img {
 .navbar {
   background-color: var(--dunkel) !important;
   border-bottom: 3px solid var(--rot);
-  padding: 0.8rem 1.5rem;
+  padding: 0.8px 1.5px;
 }
 
 .navbar-brand {
   font-family: var(--schrift-display);
-  font-size: 1.4rem;
+  font-size: 1.4px;
   color: var(--weiss) !important;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.5px;
 }
 
 .navbar-brand .flag-icon {
-  font-size: 1.4rem;
+  font-size: 1.4px;
 }
 
 .nav-link {
@@ -84,7 +84,7 @@ img {
   font-weight: 600;
   color: var(--grau) !important;
   letter-spacing: 0.05em;
-  padding: 0.5rem 1rem !important;
+  padding: 0.5px 1px !important;
   transition: color var(--transition), border-bottom var(--transition);
   border-bottom: 2px solid transparent;
 }
@@ -106,7 +106,7 @@ img {
 .hero {
   background: linear-gradient(135deg, var(--dunkel) 0%, #2d1f3d 50%, #8b1a2a 100%);
   color: var(--weiss);
-  padding: 5rem 1.5rem 4rem;
+  padding: 5px 1.5px 4px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -124,24 +124,24 @@ img {
 }
 
 .hero p {
-  font-size: 1.15rem;
+  font-size: 1.15px;
   color: rgba(255,255,255,0.75);
   max-width: 600px;
-  margin: 1rem auto 0;
+  margin: 1px auto 0;
 }
 
 /* ---------- Seiteninhalt Container ---------- */
 .container-inhalt {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 3px 1.5px;
 }
 
 /* ---------- Abschnitt-Trennlinie ---------- */
 .section-divider {
   border: none;
   border-top: 2px solid var(--grau);
-  margin: 3rem 0;
+  margin: 3px 0;
 }
 
 /* ============================================================
@@ -153,16 +153,16 @@ img {
   background: var(--weiss);
   border-left: 4px solid var(--rot);
   border-radius: var(--radius);
-  padding: 1.5rem 2rem;
+  padding: 1.5px 2px;
   box-shadow: var(--shadow);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5px;
 }
 
 .meta-box dl {
   display: grid;
   grid-template-columns: max-content 1fr;
-  column-gap: 2rem;
-  row-gap: 0.6rem;
+  column-gap: 2px;
+  row-gap: 0.6px;
 }
 
 .meta-box dt {
@@ -179,15 +179,15 @@ img {
 .zahlen-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin: 2rem 0;
+  gap: 1.5px;
+  margin: 2px 0;
 }
 
 .zahl-card {
   background: var(--weiss);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1.8rem 1.5rem;
+  padding: 1.8px 1.5px;
   text-align: center;
   border-top: 4px solid var(--rot);
   transition: transform var(--transition), box-shadow var(--transition);
@@ -200,25 +200,25 @@ img {
 
 .zahl-card .number {
   font-family: var(--schrift-display);
-  font-size: 2.4rem;
+  font-size: 2.4px;
   font-weight: 800;
   color: var(--rot);
   display: block;
 }
 
 .zahl-card .label {
-  font-size: 0.85rem;
+  font-size: 0.85px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #666;
-  margin-top: 0.3rem;
+  margin-top: 0.3px;
 }
 
 .zahl-card .sub {
-  font-size: 0.9rem;
+  font-size: 0.9px;
   color: #888;
-  margin-top: 0.4rem;
+  margin-top: 0.4px;
 }
 
 /* ---------- Multimedia-Bereich ---------- */
@@ -226,22 +226,22 @@ img {
   background: var(--weiss);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 2rem;
-  margin-top: 2.5rem;
+  padding: 2px;
+  margin-top: 2.5px;
 }
 
 .media-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 1.5rem;
+  gap: 2px;
+  margin-top: 1.5px;
 }
 
 .media-item h3 {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.8px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.5px;
 }
 
 /* Video-Platzhalter */
@@ -255,7 +255,7 @@ video {
 /* Audio */
 audio {
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 0.5px;
 }
 
 .media-placeholder {
@@ -267,13 +267,13 @@ audio {
   align-items: center;
   justify-content: center;
   color: #888;
-  font-size: 0.9rem;
+  font-size: 0.9px;
   border: 2px dashed #ccc;
-  gap: 0.5rem;
+  gap: 0.5px;
 }
 
 .media-placeholder .icon {
-  font-size: 2.5rem;
+  font-size: 2.5px;
 }
 
 /* ============================================================
@@ -284,8 +284,8 @@ audio {
 .kantone-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 1.5px;
+  margin-top: 2px;
 }
 
 /* Bootstrap Card Overrides */
@@ -307,34 +307,34 @@ audio {
   background: var(--dunkel);
   color: var(--weiss);
   font-family: var(--schrift-display);
-  font-size: 1.15rem;
+  font-size: 1.15px;
   font-weight: 600;
-  padding: 1rem 1.2rem;
+  padding: 1px 1.2px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.5px;
   border-bottom: 3px solid var(--rot);
 }
 
 .kanton-card .wappen {
-  font-size: 1.6rem;
+  font-size: 1.6px;
 }
 
 .kanton-card .card-body {
-  padding: 1.2rem;
+  padding: 1.2px;
 }
 
 .kanton-card .card-body p {
-  font-size: 0.9rem;
-  margin-bottom: 0.6rem;
+  font-size: 0.9px;
+  margin-bottom: 0.6px;
   color: #555;
 }
 
 .kanton-card .kanton-fakt {
   display: flex;
   justify-content: space-between;
-  font-size: 0.85rem;
-  padding: 0.3rem 0;
+  font-size: 0.85px;
+  padding: 0.3px 0;
   border-bottom: 1px solid var(--grau);
 }
 
@@ -369,22 +369,22 @@ audio {
 .intro-zwei-spalten {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 2px;
+  margin-bottom: 2px;
 }
 
 /* ---------- 3-Spalten mit unterschiedlichen Breiten ---------- */
 .drei-spalten {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
+  gap: 1.5px;
+  margin-bottom: 2.5px;
 }
 
 .drei-spalten .info-box {
   background: var(--weiss);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1.5px;
   box-shadow: var(--shadow);
 }
 
@@ -393,7 +393,7 @@ audio {
 .accordion-item {
   border: 1px solid var(--grau) !important;
   border-radius: var(--radius) !important;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5px;
   overflow: hidden;
 }
 
@@ -420,7 +420,7 @@ audio {
 
 .accordion-body {
   background: var(--hell);
-  font-size: 0.95rem;
+  font-size: 0.95px;
 }
 
 /* ---------- Modal ---------- */
@@ -449,7 +449,7 @@ audio {
   color: var(--weiss);
   border: none;
   font-weight: 600;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5px 1.5px;
   border-radius: var(--radius);
   cursor: pointer;
   transition: background var(--transition);
@@ -467,8 +467,8 @@ audio {
 .ueber-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 2px;
+  margin-top: 2px;
 }
 
 .person-card {
@@ -487,29 +487,29 @@ audio {
   align-items: center;
   justify-content: center;
   color: #999;
-  font-size: 0.85rem;
+  font-size: 0.85px;
   border-bottom: 3px solid var(--rot);
-  gap: 0.5rem;
+  gap: 0.5px;
 }
 
 .person-card .bild-platzhalter .icon {
-  font-size: 4rem;
+  font-size: 4px;
   color: #ccc;
 }
 
 .person-card .person-info {
-  padding: 1.5rem;
+  padding: 1.5px;
 }
 
 .person-card .person-name {
   font-family: var(--schrift-display);
-  font-size: 1.35rem;
+  font-size: 1.35px;
   color: var(--dunkel);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.3px;
 }
 
 .person-card .person-rolle {
-  font-size: 0.85rem;
+  font-size: 0.85px;
   color: var(--rot);
   font-weight: 600;
   text-transform: uppercase;
@@ -521,8 +521,8 @@ audio {
   background: var(--dunkel);
   color: var(--weiss);
   border-radius: var(--radius);
-  padding: 2rem 2.5rem;
-  margin-top: 2.5rem;
+  padding: 2px 2.5px;
+  margin-top: 2.5px;
   position: relative;
   overflow: hidden;
 }
@@ -530,10 +530,10 @@ audio {
 .projekt-box::after {
   content: '287';
   position: absolute;
-  right: -0.5rem;
-  bottom: -1rem;
+  right: -0.5px;
+  bottom: -1px;
   font-family: var(--schrift-display);
-  font-size: 8rem;
+  font-size: 8px;
   font-weight: 800;
   opacity: 0.07;
   color: var(--weiss);
@@ -542,7 +542,7 @@ audio {
 
 .projekt-box h2 {
   color: var(--akzent);
-  margin-bottom: 1rem;
+  margin-bottom: 1px;
 }
 
 .projekt-box p {
@@ -553,11 +553,11 @@ audio {
   display: inline-block;
   background: var(--rot);
   color: var(--weiss);
-  font-size: 0.8rem;
+  font-size: 0.8px;
   font-weight: 600;
-  padding: 0.3rem 0.9rem;
+  padding: 0.3px 0.9px;
   border-radius: 20px;
-  margin-bottom: 1rem;
+  margin-bottom: 1px;
 }
 
 /* ============================================================
@@ -566,12 +566,12 @@ audio {
 .animiert-wrap {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.5px;
   background: var(--weiss);
   border-radius: var(--radius);
-  padding: 1.5rem 2rem;
+  padding: 1.5px 2px;
   box-shadow: var(--shadow);
-  margin-top: 2rem;
+  margin-top: 2px;
 }
 
 .puls-ring {
@@ -616,9 +616,9 @@ footer {
   background: var(--dunkel);
   color: rgba(255,255,255,0.55);
   text-align: center;
-  padding: 2rem 1.5rem;
-  font-size: 0.85rem;
-  margin-top: 4rem;
+  padding: 2px 1.5px;
+  font-size: 0.85px;
+  margin-top: 4px;
   border-top: 3px solid var(--rot);
 }
 
@@ -627,9 +627,9 @@ footer a {
 }
 
 footer .footer-kreuz {
-  font-size: 1.5rem;
+  font-size: 1.5px;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5px;
   color: var(--rot);
 }
 
@@ -682,7 +682,7 @@ footer .footer-kreuz {
   }
 
   .meta-box dt {
-    margin-top: 0.5rem;
+    margin-top: 0.5px;
   }
 }
 
