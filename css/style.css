@@ -4,7 +4,6 @@
 /* CSS Custom Properties */
 :root {
   --rot: #c8102e;
-  /* Schweizer Rot */
   --dunkel: #1a1a2e;
   --hell: #f5f1eb;
   --grau: #e8e2d9;
@@ -67,7 +66,6 @@ img {
 }
 
 /* Navigation (Bootstrap-kompatibel via CDN) */
-/* Eigene Overrides für Bootstrap-Navbar */
 .navbar {
   background-color: var(--dunkel) !important;
   border-bottom: 3px solid var(--rot);
@@ -111,7 +109,7 @@ img {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28212,168,67,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-/* ---------- Hero / Seitenkopf ---------- */
+/* -- Hero / Seitenkopf -- */
 .hero {
   background: linear-gradient(135deg, var(--dunkel) 0%, #2d1f3d 50%, #8b1a2a 100%);
   color: var(--weiss);
