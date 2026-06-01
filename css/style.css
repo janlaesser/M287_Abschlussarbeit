@@ -1,32 +1,37 @@
-/* ---------- Google Fonts ---------- */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Source+Sans+3:wght@300;400;600&display=swap');
 
-/* ---------- CSS Custom Properties ---------- */
+/* CSS Custom Properties */
 :root {
-  --rot:    #c8102e;   /* Schweizer Rot */
+  --rot: #c8102e;
+  /* Schweizer Rot */
   --dunkel: #1a1a2e;
-  --hell:   #f5f1eb;
-  --grau:   #e8e2d9;
+  --hell: #f5f1eb;
+  --grau: #e8e2d9;
   --akzent: #d4a843;
-  --text:   #2c2c2c;
-  --weiss:  #ffffff;
+  --text: #2c2c2c;
+  --weiss: #ffffff;
 
   --schrift-display: 'Playfair Display', Georgia, serif;
-  --schrift-text:    'Source Sans 3', Helvetica, sans-serif;
+  --schrift-text: 'Source Sans 3', Helvetica, sans-serif;
 
-  --radius:  8px;
-  --shadow:  0 4px 20px rgba(0,0,0,0.12);
+  --radius: 8px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   --transition: 0.3s ease;
 }
 
-/* ---------- Reset & Basis ---------- */
-*, *::before, *::after {
+/* Reset & Basis */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--schrift-text);
@@ -37,8 +42,11 @@ body {
   font-size: 16px;
 }
 
-/* ---------- Typografie ---------- */
-h1, h2, h3, h4 {
+/* Typografie */
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--schrift-display);
   line-height: 1.2;
 }
@@ -58,25 +66,25 @@ img {
   border-radius: var(--radius);
 }
 
-/* ---------- Navigation (Bootstrap-kompatibel via CDN) ---------- */
+/* Navigation (Bootstrap-kompatibel via CDN) */
 /* Eigene Overrides für Bootstrap-Navbar */
 .navbar {
   background-color: var(--dunkel) !important;
   border-bottom: 3px solid var(--rot);
-  padding: 0.8rem 1.5rem;
+  padding: 12px 24px;
 }
 
 .navbar-brand {
   font-family: var(--schrift-display);
-  font-size: 1.4rem;
+  font-size: 24px;
   color: var(--weiss) !important;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .navbar-brand .flag-icon {
-  font-size: 1.4rem;
+  font-size: 24px;
 }
 
 .nav-link {
@@ -84,7 +92,7 @@ img {
   font-weight: 600;
   color: var(--grau) !important;
   letter-spacing: 0.05em;
-  padding: 0.5rem 1rem !important;
+  padding: 12px 24px !important;
   transition: color var(--transition), border-bottom var(--transition);
   border-bottom: 2px solid transparent;
 }
@@ -98,6 +106,7 @@ img {
 .navbar-toggler {
   border-color: var(--akzent) !important;
 }
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28212,168,67,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
@@ -106,7 +115,7 @@ img {
 .hero {
   background: linear-gradient(135deg, var(--dunkel) 0%, #2d1f3d 50%, #8b1a2a 100%);
   color: var(--weiss);
-  padding: 5rem 1.5rem 4rem;
+  padding: 80px 24px 64px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -124,45 +133,43 @@ img {
 }
 
 .hero p {
-  font-size: 1.15rem;
-  color: rgba(255,255,255,0.75);
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.75);
   max-width: 600px;
-  margin: 1rem auto 0;
+  margin: 16px auto 0;
 }
 
-/* ---------- Seiteninhalt Container ---------- */
+/* Seiteninhalt Container */
 .container-inhalt {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 48px 24px;
 }
 
-/* ---------- Abschnitt-Trennlinie ---------- */
+/* Abschnitt-Trennlinie */
 .section-divider {
   border: none;
   border-top: 2px solid var(--grau);
-  margin: 3rem 0;
+  margin: 48px 0;
 }
 
-/* ============================================================
-   SEITE 1 – Startseite
-   ============================================================ */
+/* SEITE 1 – Startseite */
 
 /* Meta-Info-Box (Abgabedatum, Dokumentation, Ersteller) */
 .meta-box {
   background: var(--weiss);
   border-left: 4px solid var(--rot);
   border-radius: var(--radius);
-  padding: 1.5rem 2rem;
+  padding: 24px 32px;
   box-shadow: var(--shadow);
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
 }
 
 .meta-box dl {
   display: grid;
   grid-template-columns: max-content 1fr;
-  column-gap: 2rem;
-  row-gap: 0.6rem;
+  column-gap: 32px;
+  row-gap: 10px;
 }
 
 .meta-box dt {
@@ -175,19 +182,19 @@ img {
   color: var(--text);
 }
 
-/* ---------- Zahlen Grid 3 Spalten × 2 Zeilen ---------- */
+/* Zahlen Grid 3 Spalten × 2 Zeilen */
 .zahlen-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin: 2rem 0;
+  gap: 24px;
+  margin: 32px 0;
 }
 
 .zahl-card {
   background: var(--weiss);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1.8rem 1.5rem;
+  padding: 24px 20px;
   text-align: center;
   border-top: 4px solid var(--rot);
   transition: transform var(--transition), box-shadow var(--transition);
@@ -195,53 +202,53 @@ img {
 
 .zahl-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
 }
 
 .zahl-card .number {
   font-family: var(--schrift-display);
-  font-size: 2.4rem;
+  font-size: 38px;
   font-weight: 800;
   color: var(--rot);
   display: block;
 }
 
 .zahl-card .label {
-  font-size: 0.85rem;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #666;
-  margin-top: 0.3rem;
+  margin-top: 5px;
 }
 
 .zahl-card .sub {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: #888;
-  margin-top: 0.4rem;
+  margin-top: 6px;
 }
 
-/* ---------- Multimedia-Bereich ---------- */
+/* Multimedia-Bereich */
 .media-section {
   background: var(--weiss);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 2rem;
-  margin-top: 2.5rem;
+  padding: 32px;
+  margin-top: 40px;
 }
 
 .media-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 1.5rem;
+  gap: 32px;
+  margin-top: 24px;
 }
 
 .media-item h3 {
-  margin-bottom: 0.8rem;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 /* Video-Platzhalter */
@@ -255,7 +262,7 @@ video {
 /* Audio */
 audio {
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 8px;
 }
 
 .media-placeholder {
@@ -267,25 +274,23 @@ audio {
   align-items: center;
   justify-content: center;
   color: #888;
-  font-size: 0.9rem;
+  font-size: 14px;
   border: 2px dashed #ccc;
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .media-placeholder .icon {
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
-/* ============================================================
-   SEITE 2 – Kantone
-   ============================================================ */
+/* SEITE 2 – Kantone */
 
 /* 4-Spalten Grid Desktop → 2 Tablet → 1 Mobile */
 .kantone-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 24px;
+  margin-top: 32px;
 }
 
 /* Bootstrap Card Overrides */
@@ -300,41 +305,41 @@ audio {
 
 .kanton-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .kanton-card .card-header {
   background: var(--dunkel);
   color: var(--weiss);
   font-family: var(--schrift-display);
-  font-size: 1.15rem;
+  font-size: 18px;
   font-weight: 600;
-  padding: 1rem 1.2rem;
+  padding: 16px 19px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
   border-bottom: 3px solid var(--rot);
 }
 
 .kanton-card .wappen {
-  font-size: 1.6rem;
+  font-size: 26px;
 }
 
 .kanton-card .card-body {
-  padding: 1.2rem;
+  padding: 20px;
 }
 
 .kanton-card .card-body p {
-  font-size: 0.9rem;
-  margin-bottom: 0.6rem;
+  font-size: 14px;
+  margin-bottom: 10px;
   color: #555;
 }
 
 .kanton-card .kanton-fakt {
   display: flex;
   justify-content: space-between;
-  font-size: 0.85rem;
-  padding: 0.3rem 0;
+  font-size: 14px;
+  padding: 5px 0;
   border-bottom: 1px solid var(--grau);
 }
 
@@ -365,35 +370,35 @@ audio {
   transform: scale(1.05);
 }
 
-/* ---------- 2-Spalten Intro-Zeile (Desktop) ---------- */
+/* 2-Spalten Intro-Zeile (Desktop) */
 .intro-zwei-spalten {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 32px;
+  margin-bottom: 32px;
 }
 
-/* ---------- 3-Spalten mit unterschiedlichen Breiten ---------- */
+/* 3-Spalten mit unterschiedlichen Breiten */
 .drei-spalten {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
+  gap: 24px;
+  margin-bottom: 40px;
 }
 
 .drei-spalten .info-box {
   background: var(--weiss);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 24px;
   box-shadow: var(--shadow);
 }
 
-/* ---------- Accordion ---------- */
+/* Accordion */
 /* Bootstrap accordion overrides */
 .accordion-item {
   border: 1px solid var(--grau) !important;
   border-radius: var(--radius) !important;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   overflow: hidden;
 }
 
@@ -420,10 +425,10 @@ audio {
 
 .accordion-body {
   background: var(--hell);
-  font-size: 0.95rem;
+  font-size: 16px;
 }
 
-/* ---------- Modal ---------- */
+/* Modal */
 /* Bootstrap modal override */
 .modal-header {
   background: var(--dunkel);
@@ -449,7 +454,7 @@ audio {
   color: var(--weiss);
   border: none;
   font-weight: 600;
-  padding: 0.5rem 1.5rem;
+  padding: 8px 24px;
   border-radius: var(--radius);
   cursor: pointer;
   transition: background var(--transition);
@@ -460,15 +465,13 @@ audio {
   color: var(--weiss);
 }
 
-/* ============================================================
-   SEITE 3 – Über uns
-   ============================================================ */
+/* SEITE 3 – Über uns*/
 
 .ueber-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 32px;
+  margin-top: 32px;
 }
 
 .person-card {
@@ -487,29 +490,29 @@ audio {
   align-items: center;
   justify-content: center;
   color: #999;
-  font-size: 0.85rem;
+  font-size: 14px;
   border-bottom: 3px solid var(--rot);
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .person-card .bild-platzhalter .icon {
-  font-size: 4rem;
+  font-size: 64px;
   color: #ccc;
 }
 
 .person-card .person-info {
-  padding: 1.5rem;
+  padding: 24px;
 }
 
 .person-card .person-name {
   font-family: var(--schrift-display);
-  font-size: 1.35rem;
+  font-size: 20px;
   color: var(--dunkel);
-  margin-bottom: 0.3rem;
+  margin-bottom: 5px;
 }
 
 .person-card .person-rolle {
-  font-size: 0.85rem;
+  font-size: 14px;
   color: var(--rot);
   font-weight: 600;
   text-transform: uppercase;
@@ -521,8 +524,8 @@ audio {
   background: var(--dunkel);
   color: var(--weiss);
   border-radius: var(--radius);
-  padding: 2rem 2.5rem;
-  margin-top: 2.5rem;
+  padding: 32px 40px;
+  margin-top: 40px;
   position: relative;
   overflow: hidden;
 }
@@ -530,10 +533,10 @@ audio {
 .projekt-box::after {
   content: '287';
   position: absolute;
-  right: -0.5rem;
-  bottom: -1rem;
+  right: -8px;
+  bottom: -16px;
   font-family: var(--schrift-display);
-  font-size: 8rem;
+  font-size: 128px;
   font-weight: 800;
   opacity: 0.07;
   color: var(--weiss);
@@ -542,36 +545,34 @@ audio {
 
 .projekt-box h2 {
   color: var(--akzent);
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .projekt-box p {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .projekt-box .modul-tag {
   display: inline-block;
   background: var(--rot);
   color: var(--weiss);
-  font-size: 0.8rem;
+  font-size: 14px;
   font-weight: 600;
-  padding: 0.3rem 0.9rem;
+  padding: 5px 15px;
   border-radius: 20px;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
-/* ============================================================
-   ANIMIERTES ELEMENT – CSS-only Puls-Kreis
-   ============================================================ */
+/* ANIMIERTES ELEMENT – CSS-only Puls-Kreis */
 .animiert-wrap {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 24px;
   background: var(--weiss);
   border-radius: var(--radius);
-  padding: 1.5rem 2rem;
+  padding: 24px 32px;
   box-shadow: var(--shadow);
-  margin-top: 2rem;
+  margin-top: 32px;
 }
 
 .puls-ring {
@@ -600,25 +601,37 @@ audio {
 }
 
 @keyframes puls {
-  0%, 100% { transform: scale(1); }
-  50%       { transform: scale(1.08); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
 }
 
 @keyframes ring-expand {
-  0%   { transform: scale(1); opacity: 0.8; }
-  100% { transform: scale(2); opacity: 0; }
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
+/* FOOTER */
 footer {
   background: var(--dunkel);
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   text-align: center;
-  padding: 2rem 1.5rem;
-  font-size: 0.85rem;
-  margin-top: 4rem;
+  padding: 32px 24px;
+  font-size: 14px;
+  margin-top: 64px;
   border-top: 3px solid var(--rot);
 }
 
@@ -627,15 +640,13 @@ footer a {
 }
 
 footer .footer-kreuz {
-  font-size: 1.5rem;
+  font-size: 24px;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   color: var(--rot);
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+/* RESPONSIVE */
 
 /* Tablet (≤ 992px) */
 @media (max-width: 992px) {
@@ -646,6 +657,7 @@ footer .footer-kreuz {
   .drei-spalten {
     grid-template-columns: 1fr 1fr;
   }
+
   .drei-spalten .info-box:first-child {
     grid-column: 1 / -1;
   }
@@ -682,7 +694,7 @@ footer .footer-kreuz {
   }
 
   .meta-box dt {
-    margin-top: 0.5rem;
+    margin-top: 8px;
   }
 }
 
