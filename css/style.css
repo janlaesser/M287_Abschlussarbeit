@@ -1,32 +1,37 @@
-/* ---------- Google Fonts ---------- */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Source+Sans+3:wght@300;400;600&display=swap');
 
-/* ---------- CSS Custom Properties ---------- */
+/* CSS Custom Properties */
 :root {
-  --rot:    #c8102e;   /* Schweizer Rot */
+  --rot: #c8102e;
+  /* Schweizer Rot */
   --dunkel: #1a1a2e;
-  --hell:   #f5f1eb;
-  --grau:   #e8e2d9;
+  --hell: #f5f1eb;
+  --grau: #e8e2d9;
   --akzent: #d4a843;
-  --text:   #2c2c2c;
-  --weiss:  #ffffff;
+  --text: #2c2c2c;
+  --weiss: #ffffff;
 
   --schrift-display: 'Playfair Display', Georgia, serif;
-  --schrift-text:    'Source Sans 3', Helvetica, sans-serif;
+  --schrift-text: 'Source Sans 3', Helvetica, sans-serif;
 
-  --radius:  8px;
-  --shadow:  0 4px 20px rgba(0,0,0,0.12);
+  --radius: 8px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   --transition: 0.3s ease;
 }
 
-/* ---------- Reset & Basis ---------- */
-*, *::before, *::after {
+/* Reset & Basis */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--schrift-text);
@@ -37,19 +42,44 @@ body {
   font-size: 1rem;
 }
 
-/* ---------- Typografie ---------- */
-h1, h2, h3, h4 {
+/* Typografie */
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--schrift-display);
   line-height: 1.2;
 }
 
-h1 { font-size: clamp(2rem, 5vw, 3.5rem); color: var(--weiss); }
-h2 { font-size: clamp(1.4rem, 3vw, 2.2rem); color: var(--rot); margin-bottom: 1rem; }
-h3 { font-size: 1.2rem; color: var(--dunkel); margin-bottom: 0.5rem; }
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--weiss);
+}
 
-p  { margin-bottom: 1rem; }
-a  { color: var(--rot); text-decoration: none; }
-a:hover { text-decoration: underline; }
+h2 {
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  color: var(--rot);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: var(--dunkel);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--rot);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 img {
   max-width: 100%;
@@ -58,7 +88,7 @@ img {
   border-radius: var(--radius);
 }
 
-/* ---------- Navigation (Bootstrap-kompatibel via CDN) ---------- */
+/* Navigation (Bootstrap-kompatibel via CDN) */
 /* Eigene Overrides für Bootstrap-Navbar */
 .navbar {
   background-color: var(--dunkel) !important;
@@ -98,6 +128,7 @@ img {
 .navbar-toggler {
   border-color: var(--akzent) !important;
 }
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28212,168,67,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
@@ -125,28 +156,26 @@ img {
 
 .hero p {
   font-size: 1.15rem;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   max-width: 600px;
   margin: 1rem auto 0;
 }
 
-/* ---------- Seiteninhalt Container ---------- */
+/* Seiteninhalt Container */
 .container-inhalt {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
 }
 
-/* ---------- Abschnitt-Trennlinie ---------- */
+/* Abschnitt-Trennlinie */
 .section-divider {
   border: none;
   border-top: 2px solid var(--grau);
   margin: 3rem 0;
 }
 
-/* ============================================================
-   SEITE 1 – Startseite
-   ============================================================ */
+/* SEITE 1 – Startseite */
 
 /* Meta-Info-Box (Abgabedatum, Dokumentation, Ersteller) */
 .meta-box {
@@ -175,7 +204,7 @@ img {
   color: var(--text);
 }
 
-/* ---------- Zahlen Grid 3 Spalten × 2 Zeilen ---------- */
+/* Zahlen Grid 3 Spalten × 2 Zeilen */
 .zahlen-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -195,7 +224,7 @@ img {
 
 .zahl-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
 }
 
 .zahl-card .number {
@@ -221,7 +250,7 @@ img {
   margin-top: 0.4rem;
 }
 
-/* ---------- Multimedia-Bereich ---------- */
+/* Multimedia-Bereich */
 .media-section {
   background: var(--weiss);
   border-radius: var(--radius);
@@ -276,9 +305,7 @@ audio {
   font-size: 2.5rem;
 }
 
-/* ============================================================
-   SEITE 2 – Kantone
-   ============================================================ */
+/* SEITE 2 – Kantone */
 
 /* 4-Spalten Grid Desktop → 2 Tablet → 1 Mobile */
 .kantone-grid {
@@ -300,7 +327,7 @@ audio {
 
 .kanton-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .kanton-card .card-header {
@@ -365,7 +392,7 @@ audio {
   transform: scale(1.05);
 }
 
-/* ---------- 2-Spalten Intro-Zeile (Desktop) ---------- */
+/* 2-Spalten Intro-Zeile (Desktop) */
 .intro-zwei-spalten {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -373,7 +400,7 @@ audio {
   margin-bottom: 2rem;
 }
 
-/* ---------- 3-Spalten mit unterschiedlichen Breiten ---------- */
+/* 3-Spalten mit unterschiedlichen Breiten */
 .drei-spalten {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -388,7 +415,7 @@ audio {
   box-shadow: var(--shadow);
 }
 
-/* ---------- Accordion ---------- */
+/* Accordion */
 /* Bootstrap accordion overrides */
 .accordion-item {
   border: 1px solid var(--grau) !important;
@@ -423,7 +450,7 @@ audio {
   font-size: 0.95rem;
 }
 
-/* ---------- Modal ---------- */
+/* Modal */
 /* Bootstrap modal override */
 .modal-header {
   background: var(--dunkel);
@@ -460,9 +487,7 @@ audio {
   color: var(--weiss);
 }
 
-/* ============================================================
-   SEITE 3 – Über uns
-   ============================================================ */
+/* SEITE 3 – Über uns*/
 
 .ueber-grid {
   display: grid;
@@ -546,7 +571,7 @@ audio {
 }
 
 .projekt-box p {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .projekt-box .modul-tag {
@@ -560,9 +585,7 @@ audio {
   margin-bottom: 1rem;
 }
 
-/* ============================================================
-   ANIMIERTES ELEMENT – CSS-only Puls-Kreis
-   ============================================================ */
+/* ANIMIERTES ELEMENT – CSS-only Puls-Kreis */
 .animiert-wrap {
   display: flex;
   align-items: center;
@@ -600,21 +623,33 @@ audio {
 }
 
 @keyframes puls {
-  0%, 100% { transform: scale(1); }
-  50%       { transform: scale(1.08); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
 }
 
 @keyframes ring-expand {
-  0%   { transform: scale(1); opacity: 0.8; }
-  100% { transform: scale(2); opacity: 0; }
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
+/* FOOTER */
 footer {
   background: var(--dunkel);
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   text-align: center;
   padding: 2rem 1.5rem;
   font-size: 0.85rem;
@@ -633,9 +668,7 @@ footer .footer-kreuz {
   color: var(--rot);
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+/* RESPONSIVE */
 
 /* Tablet (≤ 992px) */
 @media (max-width: 992px) {
@@ -646,6 +679,7 @@ footer .footer-kreuz {
   .drei-spalten {
     grid-template-columns: 1fr 1fr;
   }
+
   .drei-spalten .info-box:first-child {
     grid-column: 1 / -1;
   }
